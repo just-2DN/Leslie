@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no">
+
+<meta name="theme-color" content="#fff1f6">
+
+<title>Pour Gaego Leslie ❤️</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+
+    background:
+    radial-gradient(circle at 10% 10%,#ffffff 0%,transparent 25%),
+    radial-gradient(circle at 90% 80%,#ffd5e4 0%,transparent 30%),
+    linear-gradient(145deg,#fff8fb,#ffe8f0);
+
+    color:#402a32;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    position:fixed;
+    inset:0;
+    z-index:1000;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    linear-gradient(145deg,#fff7fa,#ffdce8);
+
+    transition:
+    opacity 1s ease,
+    visibility 1s ease;
+}
+
+.intro.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.intro-content{
+    text-align:center;
+    padding:30px;
+    animation:introAppear 1.5s ease;
+}
+
+@keyframes introAppear{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.intro-heart{
+    font-size:80px;
+    animation:heartbeat 1.5s infinite;
+}
+
+.intro h2{
+    font-family:Georgia,serif;
+    font-size:30px;
+    color:#8e2948;
+    margin:20px 0 10px;
+}
+
+.intro p{
+    color:#866974;
+    margin-bottom:25px;
+}
+
+.start-btn{
+    border:0;
+    padding:15px 28px;
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #d94d70,
+        #b92f56
+    );
+
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+
+    box-shadow:
+    0 12px 30px rgba(185,47,86,.25);
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   BACKGROUND HEARTS
+========================= */
+
+.bg-heart{
+    position:fixed;
+    bottom:-50px;
+
+    pointer-events:none;
+    z-index:0;
+
+    animation:floatHeart linear infinite;
+    opacity:.55;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:
+        translateY(0)
+        rotate(0)
+        scale(.7);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:.6;
+    }
+
+    85%{
+        opacity:.35;
+    }
+
+    100%{
+        transform:
+        translateY(-115vh)
+        rotate(360deg)
+        scale(1.2);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    position:relative;
+    z-index:2;
+}
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:30px 20px;
+}
+
+.card{
+    width:100%;
+    max-width:560px;
+
+    background:
+    rgba(255,255,255,.87);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.9);
+
+    border-radius:30px;
+
+    padding:40px 28px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 70px rgba(103,37,60,.15);
+
+    animation:cardAppear 1.2s ease;
+}
+
+@keyframes cardAppear{
+    from{
+        opacity:0;
+        transform:translateY(35px) scale(.96);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+
+/* =========================
+   HEART
+========================= */
+
+.main-heart{
+    font-size:75px;
+    margin-bottom:15px;
+
+    animation:heartbeat 1.7s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    15%{
+        transform:scale(1.15);
+    }
+
+    30%{
+        transform:scale(1);
+    }
+
+    45%{
+        transform:scale(1.08);
+    }
+}
+
+
+/* =========================
+   TEXTES
+========================= */
+
+.badge{
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    background:#fff0f5;
+    color:#c33d61;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+}
+
+h1{
+    font-family:Georgia,serif;
+
+    font-size:
+    clamp(32px,9vw,45px);
+
+    color:#391e28;
+
+    margin-bottom:12px;
+}
+
+.subtitle{
+    color:#876c75;
+    line-height:1.6;
+    margin-bottom:28px;
+}
+
+.message{
+    text-align:left;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#4b363e;
+}
+
+.message p{
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#b93459;
+    font-family:Georgia,serif;
+    font-weight:bold;
+}
+
+
+/* =========================
+   CAMP MEMORY
+========================= */
+
+.memory{
+    margin:30px 0;
+
+    padding:25px 20px;
+
+    border-radius:23px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff2f6,
+        #fff
+    );
+
+    border:1px solid #f4d8e1;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(120,40,65,.06);
+}
+
+.memory-icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.memory h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    color:#9d3151;
+    margin-bottom:10px;
+}
+
+.memory p{
+    font-size:14px;
+    color:#80666f;
+}
+
+
+/* =========================
+   PROMESSE
+========================= */
+
+.promise{
+    margin:30px 0;
+
+    padding:28px 20px;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    border:1px solid #f2d9e1;
+
+    text-align:center;
+}
+
+.promise-title{
+    font-family:Georgia,serif;
+    color:#a53152;
+    font-size:21px;
+    margin-bottom:15px;
+}
+
+.promise-text{
+    font-family:Georgia,serif;
+    font-size:17px;
+    line-height:1.7;
+    color:#51323c;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button.main-button{
+    width:100%;
+
+    min-height:55px;
+
+    border:0;
+    border-radius:18px;
+
+    padding:15px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d94d70,
+        #bd3458
+    );
+
+    color:white;
+
+    font-size:15px;
+    font-weight:bold;
+
+    box-shadow:
+    0 12px 28px rgba(189,52,88,.25);
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+button.main-button:active{
+    transform:scale(.97);
+}
+
+
+/* =========================
+   SECRET
+========================= */
+
+.secret{
+    display:none;
+
+    margin-top:30px;
+
+    padding-top:28px;
+
+    border-top:1px solid #f0dce3;
+
+    animation:secretAppear 1s ease;
+}
+
+.secret.show{
+    display:block;
+}
+
+@keyframes secretAppear{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.secret-text{
+    font-family:Georgia,serif;
+
+    font-size:
+    clamp(18px,5vw,22px);
+
+    line-height:1.75;
+
+    color:#482b34;
+}
+
+.signature{
+    margin-top:28px;
+
+    color:#8a6873;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.story{
+    padding:90px 20px;
+}
+
+.story-card{
+    max-width:560px;
+    margin:auto;
+
+    background:rgba(255,255,255,.8);
+
+    border-radius:30px;
+
+    padding:35px 25px;
+
+    box-shadow:
+    0 20px 60px rgba(100,40,60,.1);
+}
+
+.story h2{
+    text-align:center;
+
+    font-family:Georgia,serif;
+
+    font-size:30px;
+
+    color:#8f2d4c;
+
+    margin-bottom:30px;
+}
+
+.story-item{
+    padding:20px;
+
+    margin-bottom:15px;
+
+    border-left:3px solid #d64a6b;
+
+    background:#fff7fa;
+
+    border-radius:0 18px 18px 0;
+}
+
+.story-item h3{
+    font-family:Georgia,serif;
+    color:#a63253;
+    margin-bottom:7px;
+}
+
+.story-item p{
+    font-size:14px;
+    line-height:1.7;
+    color:#68515a;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:30px 20px;
+}
+
+.final-card{
+    max-width:560px;
+
+    padding:45px 28px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,.9);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 25px 70px rgba(100,30,55,.15);
+}
+
+.final-heart{
+    font-size:70px;
+
+    animation:heartbeat 1.5s infinite;
+}
+
+.final h2{
+    font-family:Georgia,serif;
+
+    font-size:34px;
+
+    color:#8e2948;
+
+    margin:20px 0;
+}
+
+.final p{
+    font-family:Georgia,serif;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#52343d;
+
+    margin-bottom:18px;
+}
+
+.final-name{
+    margin-top:30px;
+
+    color:#866570;
+
+    font-size:14px;
+    line-height:1.7;
+}
+
+
+/* =========================
+   POP HEARTS
+========================= */
+
+.pop-heart{
+    position:fixed;
+
+    bottom:-40px;
+
+    pointer-events:none;
+
+    z-index:50;
+
+    animation:
+    popHeart 4s ease-out forwards;
+}
+
+@keyframes popHeart{
+
+    0%{
+        transform:
+        translateY(0)
+        scale(.5);
+
+        opacity:1;
+    }
+
+    100%{
+        transform:
+        translateY(-110vh)
+        scale(1.5)
+        rotate(35deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:380px){
+
+    .card{
+        padding:30px 20px;
+        border-radius:25px;
+    }
+
+    .message{
+        font-size:15px;
+    }
+
+    .final h2{
+        font-size:29px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<div class="intro" id="intro">
+
+    <div class="intro-content">
+
+        <div class="intro-heart">
+            ❤️
+        </div>
+
+        <h2>
+            Pour Gaego Leslie
+        </h2>
+
+        <p>
+            Il y a quelque chose que mon cœur
+            aimerait te dire...
+        </p>
+
+        <button class="start-btn" onclick="startSite()">
+            💌 Ouvrir mon message
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     COEURS
+========================= -->
+
+<div class="bg-heart"
+style="left:5%;font-size:20px;animation-duration:9s;">
+❤️
+</div>
+
+<div class="bg-heart"
+style="left:22%;font-size:16px;animation-delay:2s;animation-duration:11s;">
+💕
+</div>
+
+<div class="bg-heart"
+style="left:45%;font-size:18px;animation-delay:4s;animation-duration:10s;">
+🤍
+</div>
+
+<div class="bg-heart"
+style="left:68%;font-size:20px;animation-delay:1s;animation-duration:12s;">
+✨
+</div>
+
+<div class="bg-heart"
+style="left:90%;font-size:18px;animation-delay:5s;animation-duration:9s;">
+❤️
+</div>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<main class="card">
+
+    <div class="main-heart">
+        ❤️
+    </div>
+
+    <div class="badge">
+        Une petite partie de mon cœur...
+    </div>
+
+    <h1>
+        Bonjour Leslie
+    </h1>
+
+    <div class="subtitle">
+        Ce site n'est pas simplement une page internet.
+        C'est une petite lettre écrite avec mon cœur.
+    </div>
+
+
+    <div class="message">
+
+        <p>
+            Je ne sais pas exactement à quel moment
+            mes sentiments pour toi ont commencé à prendre
+            autant de place dans mon cœur.
+        </p>
+
+        <p>
+            Mais aujourd'hui, je sais une chose :
+            <span class="highlight">
+            je t'aime sincèrement.
+            </span>
+        </p>
+
+        <p>
+            Peut-être qu'aujourd'hui les choses ne sont plus
+            exactement comme au début. Peut-être que les sentiments
+            que tu avais pour moi ont changé, ou qu'ils ne sont
+            simplement plus aussi forts qu'avant.
+        </p>
+
+        <p>
+            Et je ne veux pas faire semblant de ne pas le remarquer.
+            Je préfère être honnête avec toi.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         SOUVENIR DU CAMP
+    ========================= -->
+
+    <div class="memory">
+
+        <div class="memory-icon">
+            🔥❤️
+        </div>
+
+        <h3>
+            Le souvenir du camp
+        </h3>
+
+        <p>
+            Il y a eu un moment où quelque chose de beau
+            semblait nous rapprocher naturellement.
+            Des sourires, des regards, des moments simples...
+            Ces souvenirs restent précieux pour moi.
+        </p>
+
+    </div>
+
+
+    <div class="message">
+
+        <p>
+            Je repense parfois à cette période du camp,
+            et je me demande si cette complicité que nous avions
+            peut un jour retrouver sa place.
+        </p>
+
+        <p>
+            Je ne veux pas te promettre que tout redeviendra
+            exactement comme avant.
+            Je veux simplement te promettre une chose :
+            <span class="highlight">
+            je vais continuer à donner le meilleur de moi.
+            </span>
+        </p>
+
+        <p>
+            Pas pour te forcer à m'aimer.
+            Pas pour te mettre la pression.
+            Mais parce que lorsque quelqu'un compte vraiment,
+            on a envie de lui montrer ce qu'il représente pour nous.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         PROMESSE
+    ========================= -->
+
+    <div class="promise">
+
+        <div class="promise-title">
+            🤍 Ma promesse
+        </div>
+
+        <div class="promise-text">
+
+            Je ne te promets pas d'être parfait.
+
+            <br><br>
+
+            Je te promets seulement d'essayer,
+            d'apprendre de mes erreurs,
+            de prendre soin de ce que nous avons
+            et de continuer à faire de mon mieux.
+
+            <br><br>
+
+            Parce que parfois,
+            l'amour ce n'est pas abandonner
+            au premier changement.
+
+        </div>
+
+    </div>
+
+
+    <button
+    class="main-button"
+    id="openButton"
+    onclick="openSecret()">
+
+        💌 Il me reste quelque chose à te dire
+
+    </button>
+
+
+    <!-- =========================
+         SECRET
+    ========================= -->
+
+    <section
+    id="secret"
+    class="secret">
+
+        <div class="secret-text">
+
+            Leslie...
+
+            <br><br>
+
+            Si un jour tu te demandes
+            pourquoi je continue de croire en nous,
+            la réponse est simple.
+
+            <br><br>
+
+            Parce que malgré les changements,
+            malgré les doutes et malgré la peur
+            que les choses ne soient plus comme avant,
+            mes sentiments, eux, sont toujours là.
+
+            <br><br>
+
+            Je ne veux pas courir derrière un souvenir.
+
+            <br>
+
+            Je veux construire quelque chose de nouveau
+            avec toi, si ton cœur m'en laisse encore
+            la possibilité.
+
+            <br><br>
+
+            Je vais continuer à faire de mon mieux,
+            à te faire sourire,
+            à être présent,
+            et surtout à te montrer par mes actes
+            ce que mes mots n'arrivent parfois pas à expliquer.
+
+            <br><br>
+
+            <strong>
+                Je t'aime, Leslie. ❤️
+            </strong>
+
+        </div>
+
+
+        <div class="signature">
+
+            Ce petit site est dédié à
+
+            <br>
+
+            <strong>
+                Gaego Leslie ❤️
+            </strong>
+
+            <br><br>
+
+            Créé avec beaucoup de sincérité par
+
+            <br>
+
+            <strong>
+                NABALOUM Dieudonné
+            </strong>
+
+        </div>
+
+    </section>
+
+</main>
+
+</section>
+
+
+<!-- =========================
+     NOTRE HISTOIRE
+========================= -->
+
+<section class="story">
+
+<div class="story-card">
+
+    <h2>
+        Quelques mots pour nous...
+    </h2>
+
+
+    <div class="story-item">
+
+        <h3>
+            🌱 Au début
+        </h3>
+
+        <p>
+            Tout semblait plus simple.
+            Les conversations, les sourires,
+            les petits moments qui donnaient envie
+            de se rapprocher encore un peu.
+        </p>
+
+    </div>
+
+
+    <div class="story-item">
+
+        <h3>
+            🔥 Au camp
+        </h3>
+
+        <p>
+            Le camp a créé des souvenirs que je n'oublierai
+            pas facilement. C'est là que j'ai particulièrement
+            senti cette complicité entre nous.
+        </p>
+
+    </div>
+
+
+    <div class="story-item">
+
+        <h3>
+            🌙 Aujourd'hui
+        </h3>
+
+        <p>
+            Les choses ont peut-être changé.
+            Mais changer ne signifie pas forcément
+            que tout est terminé.
+        </p>
+
+    </div>
+
+
+    <div class="story-item">
+
+        <h3>
+            ❤️ Demain
+        </h3>
+
+        <p>
+            Je ne connais pas ce que demain nous réserve.
+            Mais je sais que, de mon côté,
+            je continuerai à donner le meilleur de moi.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+<div class="final-card">
+
+    <div class="final-heart">
+        ❤️
+    </div>
+
+    <h2>
+        Pour toi, Leslie
+    </h2>
+
+    <p>
+        Je ne sais pas si ces quelques mots
+        changeront quelque chose.
+    </p>
+
+    <p>
+        Mais j'espère qu'en les lisant,
+        tu comprendras au moins une chose :
+        derrière cet écran se trouve quelqu'un
+        qui tient énormément à toi.
+    </p>
+
+    <p>
+        Et même si je ne peux pas décider
+        de ce que ton cœur ressent,
+        je peux décider de ce que le mien ressent.
+    </p>
+
+    <p>
+        <strong>
+            Et le mien a choisi de t'aimer. ❤️
+        </strong>
+    </p>
+
+
+    <div class="final-name">
+
+        Avec tout mon cœur,
+
+        <br>
+
+        <strong>
+            NABALOUM Dieudonné
+        </strong>
+
+        <br>
+
+        Pour Gaego Leslie 🤍
+
+    </div>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* =========================
+   INTRO
+========================= */
+
+function startSite(){
+
+    document
+    .getElementById("intro")
+    .classList.add("hide");
+
+    createHearts();
+
+}
+
+
+/* =========================
+   SECRET
+========================= */
+
+function openSecret(){
+
+    const secret =
+    document.getElementById("secret");
+
+    const button =
+    document.getElementById("openButton");
+
+    secret.classList.add("show");
+
+    button.innerHTML =
+    "🥹 Mon cœur t'a tout dit ❤️";
+
+    createHearts();
+
+    setTimeout(function(){
+
+        secret.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
+
+    },300);
+
+}
+
+
+/* =========================
+   PLUIE DE COEURS
+========================= */
+
+function createHearts(){
+
+    const symbols=[
+        "❤️",
+        "💕",
+        "🤍",
+        "💗",
+        "💖",
+        "✨"
+    ];
+
+    for(let i=0;i<30;i++){
+
+        const heart =
+        document.createElement("div");
+
+        heart.className="pop-heart";
+
+        heart.innerHTML =
+        symbols[
+            Math.floor(
+                Math.random()*symbols.length
+            )
+        ];
+
+        heart.style.left =
+        Math.random()*100+"vw";
+
+        heart.style.fontSize =
+        (14+Math.random()*22)+"px";
+
+        heart.style.animationDelay =
+        Math.random()*1.2+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function(){
+
+            heart.remove();
+
+        },5200);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
